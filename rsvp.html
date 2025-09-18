@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RSVP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <script type="module" crossorigin src="/fesalbon-ong-rsvp/assets/rsvp-XAgENFat.js"></script>
+  <link rel="modulepreload" crossorigin href="/fesalbon-ong-rsvp/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="/fesalbon-ong-rsvp/assets/rsvp-D8f6gbsw.css">
+</head>
+<body>
+  <!-- 🌐 Navigation -->
+  <nav class="navbar">
+  <!-- Hamburger button (mobile) -->
+    <div class="nav-toggle" id="nav-toggle">
+      ☰
+    </div>
+
+
+    <a class="nav-logo" href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAD6AQMAAAC1aYMHAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAAYCAgQ1p2hQAAAAJ0Uk5TAP9bkSK1AAAEN0lEQVR4nO2ZPW7bMBiGJduAvTk3kG7QIzg9So7QsUPh5Cg5QscOBZIjdOxQ1B47FI2HoAniWKUoS/x731fKXHJw7IgP9ZF6+FGiyuLNpcxIRjKSkYxkJCMZycgIsnyKDuxr87G5A61OQGKGIveX5mN73X49XExDbtraTVjpDYgNchxpD5Sn7vvrYgrSzMzH/Oif8m1IEBm4lDYcG4tt5/BuVzyvpiLrB3uGJqwGEBuObdci95fmZH5nGGIvX7WziLmifmcA0vVgQMwJqp3fGYCce1CcFTPI/OhfGYY4xdoajR1zjvQ96BBbeXPn9R8gfTidYhZZP9hAxxF3geZHbwIAZOiBRbqxarwhI4hTrKu7/bRQSOPCKfopWf2cCSS20iLrh3IMcYrt68LSbpRTJLGya6f7i5FIsXPVpjubQGwFd03NkH244EhqZVs2X1YcCRXrK1Q/FlORXuH1nxlHgJVF28OSI6Fi/dyaH4cLM4b0OpYngQzheIq1/xquJUZixdqTX9UMiazc9xU3ny8YEik2INU3jSSKmV/fVwxJE19X1r8oghUzTT0uJiLD8eXfGUOwYqaPLxpJFGsHv2RIaKVL3wLBVrYt9CMBkTjxjSDEStPW+0uMwMQ3FQkVM+NyQxCY+DrkthYIsNL8vicITnwW6e2PEaaYObJXSJL4JMKsNCEfVhjBiW8cQYpxBCe+tswfCRIqFiDPC45AxSjCEp9AWOJra76MIbFiRfk6gwhejscRG05sZVGcMOIUSx9dCIKX43EEKmZ+lRBhiU8gNPFpxIaTWEkRmvg0gq1kiAsnsZIhwkqJYMXM0NwghC3HAmHL8RhCFCMIT3wU4YlPI/ZfqZUEUVYKBCc+iqDnEHcQXX2+HGuEKYYRvhxTRCQ+idhwgGIY4csxRVTiI6lPJT6CSCtx5ufLMUVU4iMIX44LtvCpxIcRsRwXZEWWiW8SEikGb0i0lfC2R1sJEW0lRLSV8EZRWwkRtRyTm16Z+PCttUx8GFHLMX5M0ImPI1Qx+PyiFSu25TVGqGLwWcwpBpZj/JAol2OBkJtE8sArl2OMaMXgw7tMfHiLAE2SCUjcA1fgdgfqgRf2bZ0gsAdeDFcEiSeJFwPYIILzykPANhScJF4MDNnXae1zDENNh8B55RoctmE8BE4S1+BvsD2IJokrbhfKQ9AkcQVudcKXQENpDgCRipWnfZ0iKHUPZX5EO73SSrifrK2sdp6M7tSFUGzzFWynw9Q9lO1HsGkvrSxP6NWAVGz55B2ZhlQ79JpDWrm99heVACGKlSf4/kUptnyCL4ZU4tvc+UMZIEQxIwZ8ySUUM90M7vRcSwwxXgQHxpHWpMCK0jvAS3C9JiHhsPRI8lbUL+Gc6BGr2KS4JiHxzf/5r1Vs0kkGpHsvDUs873qkFmeJCk2PGclIRjKSkYxkJCP/PfIPolG3GTEVuCQAAAAASUVORK5CYII=" alt="Event Logo"></a>
+    <ul class="nav-links">
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#details">Details</a></li>
+      <li><a href="/rsvp">RSVP</a></li>
+    </ul>
+  </nav>
+  <div class="rsvp-page">
+  <div id="app">
+    <h1 class="wedding">Fesalbon-Ong Wedding</h1>
+    <h1 class="title">RSVP Confirmation</h1>
+    <p class="subtitle">Search your name to confirm attendance.</p>
+    <div id="formGroup" class="form-group">
+      <input type="text" id="searchInput" placeholder="Enter your name" />
+      <button id="searchBtn">Search</button>
+    </div>
+    <div id="result"></div>
+  </div>
+</div>
+  
+  <!-- ✨ Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 <a>Fesalbon-Ong Wedding</a>  🥂 | Made with 🤖 vibe</p>
+  </footer>
+
+</body>
+</html>
