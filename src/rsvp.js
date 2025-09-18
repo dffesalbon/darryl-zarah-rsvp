@@ -10,6 +10,7 @@ let inviteList = [];
 //Fetch invites (read-only list from published sheet)
 async function loadInvites() {
   try {
+
     const formGroup = document.getElementById("formGroup");
     formGroup.style.display = "none";
     inviteList = [];
@@ -17,9 +18,11 @@ async function loadInvites() {
     const text = await response.text();
     const rows = text.split("\n").map(r => r.split(","));
     inviteList = rows.map(r => {return {'name': r[0].trim().toLowerCase(), 'status': r[1].trim().toLowerCase()}});
-    console.log(inviteList);
     formGroup.style.display = "flex";
+
   } catch (err) {
+
+    console.error('fail fetching invites')
     console.log(err);
     const resultDiv = document.getElementById("result");
     resultDiv.innerHTML = "<p>Something went wrong. Please try again later.</p>";
@@ -39,15 +42,11 @@ async function searchInvite() {
   }
 
   let person = inviteList.find(p => p.name === input);
-  console.log(person)
+  
   if (person){
-
     checkStatus(person, input);
-  
   } else {
-
     resultDiv.innerHTML = `<p>Sorry, <b>${input}</b> is not on the invite list.</p>`;
-  
   }
 }
 
