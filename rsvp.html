@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RSVP</title>
+  <link rel="stylesheet" href="/styles/rsvp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- 🌐 Navigation -->
+  <nav class="navbar">
+  <!-- Hamburger button (mobile) -->
+    <div class="nav-toggle" id="nav-toggle">
+      ☰
+    </div>
+
+
+    <a class="nav-logo" href="/"><img src="/assets//images/logo.png" alt="Event Logo"></a>
+    <ul class="nav-links">
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#details">Details</a></li>
+      <li><a href="/rsvp">RSVP</a></li>
+    </ul>
+  </nav>
+  <div class="rsvp-page">
+  <div id="app">
+    <h1 class="wedding">Fesalbon-Ong Wedding</h1>
+    <h1 class="title">RSVP Confirmation</h1>
+    <p class="subtitle">Search your name to confirm attendance.</p>
+    <div id="formGroup" class="form-group">
+      <input type="text" id="searchInput" placeholder="Enter your name" />
+      <button id="searchBtn">Search</button>
+    </div>
+    <div id="result"></div>
+  </div>
+</div>
+  
+  <!-- ✨ Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 <a>Fesalbon-Ong Wedding</a>  🥂 | Made with 🤖 vibe</p>
+  </footer>
+
+<script type="module" src="/src/rsvp.js"></script>
+</body>
+</html>

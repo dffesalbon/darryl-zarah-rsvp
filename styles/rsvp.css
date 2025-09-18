@@ -1,0 +1,263 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+  background: #fdf6f0; /* beige */
+  font-family: 'Lato', sans-serif;
+}
+
+.rsvp-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fffaf5; /* lighter beige */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #800020;
+}
+
+.nav-logo img {
+  height: 2rem;
+  padding: 0; 
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #800020;
+}
+
+/* Hamburger button */
+.nav-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0.1rem;
+    background: #fffaf5;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    display: none; /* hidden by default */
+    width: 100%;
+  }
+
+  .nav-links li {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex; /* show when toggled */
+    animation: dropdown 0.3s ease;
+  }
+
+  .nav-toggle {
+    display: block; /* show hamburger on mobile */
+  }
+}
+
+/* Container */
+#app {
+  /* max-width: 500px; */
+  width: 100%;
+  padding: 30px;
+  /* background: #fffaf5; beige card */
+  border-radius: 16px;
+  /* box-shadow: 0 4px 20px rgba(0,0,0,0.08); */
+  text-align: center;
+}
+
+/* Titles */
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #800020; /* burgundy */
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  transition: border 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #800020;
+  box-shadow: 0 0 0 2px rgba(178, 141, 108, 0.2);
+}
+
+/* Button (same width as input) */
+.form-group button {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px;
+  background: #800020; /* burgundy */
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  transition: background 0.3s ease;
+}
+
+.form-group button:hover {
+  background: #a83248; /* lighter burgundy */
+}
+
+
+/* Result box */
+#result {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.confirmation-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* space between buttons */
+  margin-top: 20px;
+}
+
+/* Buttons */
+.confirmation-button {
+  flex: 1; /* equal width */
+  max-width: 160px;
+  height: 48px; /* fixed height for consistency */
+  border: none;
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centers text vertically & horizontally */
+}
+
+/* Confirm = green */
+#updateConfirmBtn {
+  background: #800020; /* burgundy */
+  color: white;
+}
+#updateConfirmBtn:hover {
+  background: #449d48;
+}
+
+/* Decline = red */
+#updateDeclineBtn {
+  background: #800020; /* burgundy */
+  color: white;
+}
+#updateDeclineBtn:hover {
+  background: #c62828;
+}
+
+
+/* Confirm button style */
+#confirmBtn {
+  background: #800020;
+  color: white;
+}
+#confirmBtn:hover {
+  background: #449d48;
+}
+
+/* Decline button style */
+#declineBtn {
+  background: #800020; /* muted red */
+  color: white;
+}
+#declineBtn:hover {
+  background: #a02020;
+}
+
+/* Footer */
+.footer {
+  background: #800020;
+  color: #fdf6f0;
+  text-align: center;
+  padding: 1.5rem;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
+
+.footer a {
+    font-family: 'Playfair Display', cursive;
+}
+
+.wedding {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+}

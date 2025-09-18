@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+  <!-- Hamburger Navigatiob (mobile) -->
+    <div class="nav-toggle" id="nav-toggle">
+      ☰
+    </div>
+
+
+    <a class="nav-logo" href="/"><img src="/assets//images/logo.png" alt="Event Logo"></a>
+    <ul class="nav-links">
+      <li><a href="#main">About</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="/rsvp">RSVP</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main/Landing Page -->
+  <section id="main" class="section landing">
+    <p>Let's celebrate</p>
+    <h2>Darryl & Zarah</h2>
+    <p class="landing-message">
+    We are overjoyed to finally begin this new chapter together, and nothing would make it more special than celebrating with the people we love most. Your presence means the world to us.
+  </p>
+  </section>
+
+  <!-- 📅 Event Details -->
+  <section id="details" class="section details">
+    <h2>Event Details</h2>
+    <div class="detail-grid">
+      <div class="detail-card">
+        <h3>💒 Ceremony</h3>
+        <p>%VITE_CEREMONY%</p>
+      </div>
+      <div class="detail-card">
+        <h3>📆 Date</h3>
+        <p>%VITE_EVENT_DATE%</p>
+      </div>
+      <div class="detail-card">
+        <h3>🥂 Reception</h3>
+        <p>%VITE_RECEPTION%</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- RSVP redirect -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>You are Invited!</h1>
+      <p>Join us for a night to remember. Save the date and confirm your attendance.</p>
+      <a href="/rsvp" class="btn-primary">RSVP Now</a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 <a>Fesalbon-Ong Wedding</a>  🥂 | Made with 🤖 vibe</p>
+  </footer>
+
+  <script type="module" src="/src/index.js"></script>
+</body>
+</html>
