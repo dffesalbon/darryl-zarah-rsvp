@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: `/${import.meta.env.VITE_REPOSITORY}/`, // github repository
+  base: '/darryl-zarah-rsvp/', // github repository
   build: {
     rollupOptions: {
       input: {
