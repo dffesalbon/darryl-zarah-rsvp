@@ -17,5 +17,5 @@ function init() {
 
 }
 
-
+console.log(import.meta.env.BASE_URL);     // base public path
 init();
